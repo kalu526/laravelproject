@@ -1,0 +1,541 @@
+*{
+    margin:0;
+}
+
+
+
+.topbar{
+    width:100%;
+    height:50px;
+    background-color: yellow;
+    position: sticky;
+    top:0;
+    display:flex;
+    align-items: center;
+    z-index:999;
+}
+
+.topleft,.topright{
+    flex:3;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.topicon{
+    margin-right: 10px;
+    font-size: 20px;
+    color:#444;
+    cursor:pointer;
+}
+.topmiddle{
+    flex:6
+}
+.toplist{
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.toplistitem{
+    margin-right: 20px;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.topimage{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+.header{
+    margin-top: 60px;
+}
+
+.headertitle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headertitlebg{
+    position:absolute;
+    top:65%;
+    font-size: 30px;
+    color:white;
+}
+.headertitlesm{
+    position:absolute;
+    top:72%;
+    font-size: 20px;
+    color:white;
+}
+.btn{
+    position:absolute;
+    top:78%;
+    padding:15px 25px;
+    background-color:rgb(218, 221, 30);
+    border-radius: 5px;
+    border:1px solid yellow;
+    cursor:pointer;
+    color:white;
+}
+.btn:hover{
+    background-color:blueviolet;
+    border:1px solid blueviolet;
+}
+
+.headerimage{
+    width:100%;
+   
+    height:600px;
+    object-fit: cover;
+}
+
+
+
+
+.home{
+    display:flex;
+    flex-direction: row;
+}
+
+.posts{
+    flex:9;
+    display:flex;
+    flex-wrap: wrap;
+    margin:20px;
+}
+.post{
+    width:385px;
+    margin:0 25px 40px 25px;
+}
+.postimg{
+    width:100%;
+    height:280px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.postinfo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.postcat{
+    font-size: 15px;
+    color:rgb(112, 106, 106);
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.posttitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.postdate{
+    font-size: 17px;
+    color:#999;
+    margin-top: 15px;
+}
+.postdesc{
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 15px;
+    color:#444;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+}
+
+
+
+.sidebar{
+  
+    position:sticky;
+    flex:3;
+    margin:20px;
+    padding-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: blueviolet;
+
+}
+
+.sidebarItem{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebarTitle{
+    text-align: center;
+    margin:10px;
+    padding:5px;
+    width:80%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid lightcyan;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+line-height: 20px;
+}
+
+.sidebarItem >img {
+    margin:15px;
+    width:300px;
+    height:300px;
+}
+.sidebarItem >p {
+    padding:30px;
+    color:rgb(150, 147, 147);
+}
+.sidebarlist{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sidebarlistalignleft{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+    
+}
+.sidebarlistalignright{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.sidebarlistitem{
+    margin-top: 15px;
+    cursor:pointer;
+    color:rgb(175, 165, 165);
+}
+
+.sidebarsocial{
+    width:285px;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.sidebaricon{
+    font-size: 16px;
+    margin-left: 10px;
+    color:lightgray;
+    cursor:pointer;
+}
+
+
+
+.singlepost{
+   flex:9;
+}
+
+.singlepostwrapper{
+    padding:20px;
+    padding-right:0px;
+}
+
+.singlepostimg{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.singleposttitle{
+    margin:10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.singlepostedit{
+    float:right;
+    font-size: 18px;
+}
+.singleposticon{
+    margin-left: 10px;
+    cursor:pointer;
+}
+.singleposticon:first-child{
+    color:teal;
+}
+.singleposticon:last-child{
+    color:red;
+}
+
+.singlepostinfo{
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 18px;
+  
+}
+
+.singlepostdesc{
+    color:#666;
+    line-height: 25px;
+    font-size: 18px;
+}
+.singlepostdesc::first-letter{
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+
+.write{
+    margin-top:70px;
+}
+.writeform{
+position:relative;
+}
+.writeimg{
+    margin-left: 150px;
+    width:70vw;
+    height:250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.writeformgroup{
+    margin-left: 150px;
+    display:flex;
+    align-items: center;
+}
+
+.writeicon{
+    width:25px;
+    height:25px;
+    border:1px solid;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color:gray;
+    cursor:pointer;
+}
+
+.writeinput{
+    font-size: 30px;
+   padding: 30px;
+    border:none;
+    width:70vw;
+
+}
+.writeinput:focus{
+    outline:none;
+}
+
+.writetext{
+    font-size: 20px;
+    height: 100vh;
+}
+
+.writebutton{
+    position:absolute;
+    top:20px;
+    right:50px;
+    border:none;
+    padding:10px;
+    font-size: 16px;
+    background-color: teal;
+    cursor:pointer;
+    border-radius: 10px;
+    color:white;
+}
+
+
+
+.settingwrapper{
+flex:9;
+padding:20px;
+}
+.settingtitle{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.settingupdatetitle{
+    font-size: 24px;
+    cursor: pointer;
+    color:lightcoral;
+    margin-bottom: 20px;
+}
+.settingdeletetitle{
+    font-size: 15px;
+    cursor: pointer;
+    color:red;
+}
+
+.settingform{
+    display:flex;
+    flex-direction: column;
+
+}
+.settingpp{
+    display:flex;
+    align-items: center;
+    margin:10px 0;
+}
+.settingpp >img{
+    width:70px;
+    height:70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.settingicon{
+    width:35px;
+    height:35px;
+    font-size: 34px;
+    border-radius: 50%;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: lightcoral;
+    color:white;
+    text-align: center;
+    margin-left:10px;
+}
+
+.settingform > label{
+    font-size: 20px;
+    margin-top:20px;
+}
+
+.settingform >input{
+    color:gray;
+    margin:10px 0;
+    height:30px;
+    border:none;
+    border-bottom: 1px solid gray;;
+}
+
+.settingform >input:focus{
+    outline: none;
+}
+.settingbutton{
+    width:150px;
+    margin-top: 20px;
+    padding:10px;
+    cursor:pointer;
+    align-self: center;
+    background-color: teal;
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+
+
+
+
+
+.login{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)) ,url("https://mdbcdn.b-cdn.net/img/new/slides/041.webp");
+    background-size: cover;
+    
+}
+.loginwrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    top:50%;
+}
+
+.logintitle{
+    font-size: 50px;
+    
+}
+
+.loginform{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+.loginform >label{
+    margin:10px 0;
+}
+
+.logininput{
+    padding:10px;
+    width:300px;
+    background-color: white;
+    border:none;
+}
+.logininput:focus{
+    outline:none;
+}
+.loginbutton{
+    margin-top: 20px;
+    background-color: lightcoral;
+    color:white;
+    cursor:pointer;
+    padding:10px;
+    border:none;
+    border-radius: 10px;
+}
+.option{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.option span{
+    color:rgb(29, 29, 29);
+    font-size: 18px;
+}
+.loginregisterbutton{
+    
+    background-color: teal;
+    color:white;
+    cursor:pointer;
+    padding:10px;
+    border:none;
+    border-radius: 10px;
+    margin-left:10px;
+    width:100px;
+}
+
+.writecatagory{
+    margin-top: 20px;
+    padding:5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:none;
+    color: gray;
+}
+.writecatagory:focus{
+    outline:none;
+}
